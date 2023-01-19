@@ -58,7 +58,11 @@ If the `appname` or `NEW_RELIC_APP_NAME` is not specified, we use your applicati
 
 To configure the PHP agent, you can add settings inside your [.user.ini](https://www.clever-cloud.com/doc/deploy/application/php/php-apps/#change-php-settings). 
 
-All the configuration settings are [available here](https://docs.newrelic.com/docs/apm/agents/php-agent/configuration/php-agent-configuration/#inivar-tt-settings)
+All the configuration settings are [available here](https://docs.newrelic.com/docs/apm/agents/php-agent/configuration/php-agent-configuration/#inivar-tt-settings). For exemple :
+
+```dosini
+newrelic.error_collector.ignore_exceptions=Symfony\Component\HttpKernel\Exception\NotFoundHttpException
+```
 
 ### Usage
 
